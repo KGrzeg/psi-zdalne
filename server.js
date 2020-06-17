@@ -9,6 +9,10 @@ app.use(express.static("public"));
 
 io.on("connection", (socket) => {
   console.log("a user connected");
+
+  socket.on("aktualizacja", (dane) => {
+    console.log(dane);
+  });
 });
 
 http.listen(port, () =>
