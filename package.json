@@ -1,0 +1,23 @@
+{
+  "name": "psi-zdalne",
+  "version": "1.0.0",
+  "description": "Grupa pomocy AiR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KGrzeg/psi-zdalne.git"
+  },
+  "author": "Grzeogrz Kupczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KGrzeg/psi-zdalne/issues"
+  },
+  "homepage": "https://github.com/KGrzeg/psi-zdalne#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
