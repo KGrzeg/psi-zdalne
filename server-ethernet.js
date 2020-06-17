@@ -14,8 +14,12 @@ function wyslij(liczba) {
 }
 
 const server = net.createServer(function (socket) {
-  socket.pipe(socket);
   matlab_socket = socket;
+
+  socket.on("data", (data) => {
+    const liczba = data.readDoubleBE();
+    console.log("<<< " + liczba);
+  });
 });
 
 server.listen(2137, "127.0.0.1");
